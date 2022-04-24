@@ -12,13 +12,31 @@ public class MarkdownParseTest {
         assertEquals(2, 1 + 1);
     }
 
-    @Test public void testGetLinks() throws IOException{
+    @Test public void testingTestfile() throws IOException{
         ArrayList<String> list = new ArrayList<String>();
 
         list.add("https://something.com");
         list.add("some-thing.html");
 
         Path fileName = Path.of("test-file.md");
+        String content = Files.readString(fileName);
+        assertEquals(MarkdownParse.getLinks(content), list);
+
+    }
+
+    @Test public void testingTestfile1() throws IOException{
+        ArrayList<String> list = new ArrayList<String>();
+
+        Path fileName = Path.of("test-file1.md");
+        String content = Files.readString(fileName);
+        assertEquals(MarkdownParse.getLinks(content), list);
+
+    }
+
+    @Test public void testingTestfile2() throws IOException{
+        ArrayList<String> list = new ArrayList<String>();
+
+        Path fileName = Path.of("test-file2.md");
         String content = Files.readString(fileName);
         assertEquals(MarkdownParse.getLinks(content), list);
 
