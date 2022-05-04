@@ -40,9 +40,14 @@ public class MarkdownParse {
 
 
     public static void main(String[] args) throws IOException {
-        Path fileName = Path.of(args[0]);
-        String content = Files.readString(fileName);
-        ArrayList<String> links = getLinks(content);
-	    System.out.println(links);
+       if(args.length != 0 && args != null){
+            Path fileName = Path.of(args[0]);
+            String content = Files.readString(fileName);
+            ArrayList<String> links = getLinks(content);
+            System.out.println(links);
+       }
+       else{
+           System.out.println("Error: No file was given");
+       }    
     }
 }
