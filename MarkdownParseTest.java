@@ -115,4 +115,35 @@ public class MarkdownParseTest {
         assertEquals(MarkdownParse.getLinks(content), list);
 
     }
+
+    // @Test public void testingSnippet1() throws IOException{
+    //     ArrayList<String> list = new ArrayList<String>();
+
+    //     Path fileName = Path.of("Snippets/snippet1.md");
+    //     String content = Files.readString(fileName);
+    //     assertEquals(MarkdownParse.getLinks(content), list);
+
+    // }
+
+    // @Test public void testingSnippet2() throws IOException{
+    //     ArrayList<String> list = new ArrayList<String>();
+        
+    //     list.add("a.com(())");
+    //     list.add("example.com");
+
+    //     Path fileName = Path.of("Snippets/snippet2.md");
+    //     String content = Files.readString(fileName);
+    //     assertEquals(MarkdownParse.getLinks(content), list);
+
+    // }
+
+    // @Test public void testingSnippet3() throws IOException{
+    //     ArrayList<String> list = new ArrayList<String>();
+
+    //     Path fileName = Path.of("Snippets/snippet3.md");
+    //     String content = Files.readString(fileName);
+    //     assertEquals(MarkdownParse.getLinks(content), list);
+
+    // }
+
 }
